@@ -1,6 +1,6 @@
 html,body{
 	margin:0;
-	padding:0;
+	padding:2em;
 	height:100%;
 
 }
@@ -10,17 +10,28 @@ html,body{
 	flex-direction:row;
 	align-items:baseline; */
 
-	display:flex;
+	/* display:flex;
 	flex-wrap:wrap;
-	justify-content:space-around;
+	justify-content:space-around; */
+
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap: 1em 1em;
+
+/* grid-auto-rows:minmax(auto,auto); */
+
 }
 
 img{
 	/* width: 300px;
 	height:auto;
 	margin:1em; */
-	width:auto;
+
+	/* width:auto;
 	height: 300px;
-	margin: 1em;
+	margin: 1em; */
+
+	width: 400px;
+	height:auto;
 
 }
