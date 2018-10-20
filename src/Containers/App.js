@@ -8,6 +8,15 @@ import Register from "../Components/Register/Register";
 import IdeaPreviewBoxContainer from "../Components/IdeaPreviewBoxContainer/IdeaPreviewBoxContainer";
 
 class App extends Component {
+	constructor(){
+		super();
+		this.state ={
+			
+		}
+	}
+	componentDidMount(){
+
+	}
   render() {
     return (
     	<div>

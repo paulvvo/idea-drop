@@ -6,7 +6,7 @@ class Login extends Component{
 			<div>
 			<main className="pa4 black-80">
 				<form className="measure center">
-					<fieldset id="sign_up" className="ba b--transparent ph0 mh0">
+					<fieldset className="ba b--transparent ph0 mh0">
 						<legend className="f4 fw6 ph0 mh0">Sign In</legend>
 						<div className="mt3">
 							<label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
