@@ -11,7 +11,7 @@ class App extends Component {
 	constructor(){
 		super();
 		this.state ={
-			
+
 		}
 	}
 	componentDidMount(){
@@ -20,8 +20,7 @@ class App extends Component {
   render() {
     return (
     	<div>
-				<Register/>
-				<Login/>
+
 				<IdeaPreviewBoxContainer/>
 			</div>
     );
@@ -29,3 +28,7 @@ class App extends Component {
 }
 
 export default App;
+
+
+// <Register/>
+// <Login/>
