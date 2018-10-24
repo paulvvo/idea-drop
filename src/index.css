@@ -1,3 +1,6 @@
+*{
+	box-sizing:border-box;
+}
 html{
 	margin:0;
 	padding:0;
@@ -16,8 +19,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
+.navbar {
+	background-color:rgba(0, 9, 25, 0.8);
+	padding:2em;
+	text-align:right;
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+}
+.navbar input{
+	width: 20em;
+	border-radius: 0.5em;
+	outline-width:0;
+	padding:0.5em;
+	margin:0.5em;
+}
+.navbar a{
+	color:white;
+	margin:0.5em;
+	text-decoration:none;
+	border: 0.05em solid white;
+	border-radius:0.2em;
+	padding:0.5em;
+}
+.navbar a:hover{
+	color:rgb(0, 9, 25);
+	background-color:white;
+}
 .IdeaPreviewImage{
 	width: 20em;
 	height:auto;
