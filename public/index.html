@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+
     <meta charset="utf-8">
     <link rel="shortcut icon" href="%PUBLIC_URL%/drop.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,14 +21,23 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+
     <title>React App</title>
+
+		<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ6jm6g1mwsSL1INUZXwIYbf8KoJnt4A8&callback=initMap"
+		async defer></script>
+		<style>
+		#map{
+			height:100%;
+		}
+		</style>
+
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
-			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-			<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
-			<script src="./masonry.js" ></script>
     </noscript>
     <div id="root"></div>
     <!--
@@ -39,7 +50,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
-
   </body>
 </html>

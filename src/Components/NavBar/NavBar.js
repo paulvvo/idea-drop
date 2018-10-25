@@ -7,9 +7,9 @@ class NavBar extends Component{
 		return(
 			<div className="navbar">
 				<input type="text" placeholder="Looking for something '-' ?"/>
-				<a href="#">Login</a>
-				<a href="#">Sign Up</a>
-				<a href="#">Logout</a>
+				<a href="#0">Login</a>
+				<a href="#0">Sign Up</a>
+				<a href="#0">Logout</a>
 			</div>
 		)
 	}
