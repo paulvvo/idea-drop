@@ -47,8 +47,9 @@ code {
 	color:rgb(0, 9, 25);
 	background-color:white;
 }
-#map{
-	height:100%;
+.masonry-item{
+	width:15em;
+
 }
 .IdeaPreviewImage{
 	width: 20em;
