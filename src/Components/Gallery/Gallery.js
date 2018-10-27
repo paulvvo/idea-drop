@@ -4,9 +4,8 @@ import Masonry from 'react-masonry-component';
 
 
 const style = {
-    backgroundColor: 'purple',
 		height:"100%",
-		isFitWidth: "true" 
+		width:"89%"
 
 };
 
