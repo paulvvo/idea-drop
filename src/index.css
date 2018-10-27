@@ -47,10 +47,24 @@ code {
 	color:rgb(0, 9, 25);
 	background-color:white;
 }
-.masonry-item{
-	width:15em;
 
+.my-gallery-class{
+	background-color:steelblue;
+	margin:0 auto;
 }
+.masonry-item{
+	margin:1em;
+	width:15em;
+	border:0.05em solid black;
+}
+.masonry-item img{
+	width:15em;
+	border-radius:5px;
+}
+.masonry-item-caption{
+	text-align:center;
+}
+
 .IdeaPreviewImage{
 	width: 20em;
 	height:auto;

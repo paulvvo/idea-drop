@@ -4,10 +4,9 @@ import Masonry from 'react-masonry-component';
 
 
 const style = {
-    backgroundColor: 'steelblue',
-		border:"1px solid black",
-		display: "flex",
-		justifyContent:"center"
+    backgroundColor: 'purple',
+		height:"100%",
+		isFitWidth: "true" 
 
 };
 
@@ -15,10 +14,10 @@ class Gallery extends Component {
     render() {
         const childElements = this.props.elements.map(function(element, i){
            return (
-						 <figure key={i}>
-						 		<img className="masonry-item" src={element.src} alt="#"/>
-								<figcaption>Image {i}</figcaption>
-						 </figure>
+						 <div className="masonry-item" key={i}>
+						 		<img src={element.src} alt="#"/>
+								<figcaption className="masonry-item-caption">Image {i}</figcaption>
+						 </div>
 
           	);
         });
