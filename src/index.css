@@ -50,10 +50,7 @@ code {
 
 .my-gallery-class{
 	margin:0 auto;
-	padding: 0 auto;
 	text-align:center;
-	display:flex;
-	justify-content:center;
 }
 .masonry-item{
 	margin:1em;
@@ -63,9 +60,6 @@ code {
 	width:15em;
 	border-radius:5px;
 }
-/* .masonry-item-caption{
-	text-align:center;
-} */
 
 .IdeaPreviewImage{
 	width: 20em;
