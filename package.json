@@ -6,7 +6,6 @@
     "ajv": "^6.5.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-masonry-component": "^6.2.1",
     "react-redux": "^5.1.0",
     "react-scripts": "2.0.4",
     "redux": "^4.0.1",
