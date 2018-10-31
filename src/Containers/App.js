@@ -6,6 +6,7 @@ import './App.css';
 import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 import NavBar from "../Components/NavBar/NavBar";
+import Scroll from "../Components/Scroll/Scroll";
 import IdeaPreviewBoxContainer from "../Components/IdeaPreviewBoxContainer/IdeaPreviewBoxContainer";
 
 class App extends Component {
@@ -24,12 +25,16 @@ class App extends Component {
     return (
     	<div>
 				<NavBar/>
-				<IdeaPreviewBoxContainer/>
-
-
+				<Scroll>
+					<IdeaPreviewBoxContainer onImagePreviewBoxClick={this.onImagePreviewBoxClick}/>
+				</Scroll>
 			</div>
     );
   }
+
+	onImagePreviewBoxClick = () =>{
+		console.log("clicked");
+	}
 }
 
 export default App;

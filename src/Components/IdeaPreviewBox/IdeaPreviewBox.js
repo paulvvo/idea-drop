@@ -7,7 +7,8 @@ class IdeaPreviewBox extends Component{
 				<img
 				className="IdeaPreviewImage"
 				src= {this.props.url}
-				alt="games"/>
+				alt="games"
+				onClick={this.props.onImagePreviewBoxClick}/>
 			</div>
 		)
 	}
