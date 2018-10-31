@@ -12,6 +12,9 @@ class App extends Component {
 	constructor(){
 		super();
 		this.state ={
+			searchInputText:"",
+
+
 		}
 	}
 	componentDidMount(){
@@ -22,8 +25,7 @@ class App extends Component {
     	<div>
 				<NavBar/>
 				<IdeaPreviewBoxContainer/>
-				<Register/>
-				<Login/>
+
 
 			</div>
     );
@@ -31,3 +33,7 @@ class App extends Component {
 }
 
 export default App;
+
+
+// <Register/>
+// <Login/>

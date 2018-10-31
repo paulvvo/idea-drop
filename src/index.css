@@ -47,21 +47,15 @@ code {
 	color:rgb(0, 9, 25);
 	background-color:white;
 }
-
-.my-gallery-class{
-	margin:0 auto;
-	text-align:center;
-}
-.masonry-item{
-	margin:1em;
-	width:15em;
-}
-.masonry-item img{
-	width:15em;
-	border-radius:5px;
+.IdeaContainer{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
 }
 
 .IdeaPreviewImage{
-	width: 20em;
-	height:auto;
+	width: auto;
+	height:20em;
+	margin:1em;
 }
