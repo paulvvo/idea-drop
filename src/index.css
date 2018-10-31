@@ -9,6 +9,7 @@ html{
 body {
   margin: 0;
   padding: 0;
+	height:100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -18,6 +19,7 @@ body {
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
+	overflow:hidden;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -51,6 +53,18 @@ code {
 	color:rgb(0, 9, 25);
 	background-color:white;
 }
+.scrollContainer{
+	height: 100vh;
+}
+.scroll{
+	overflow-y:scroll;
+	border: 0.1em solid white;
+	height:70%;
+	position:absolute;
+	top:40%;
+	transform:translateY(-50%);
+}
+
 .IdeaContainer{
 	display:flex;
 	flex-direction:row;

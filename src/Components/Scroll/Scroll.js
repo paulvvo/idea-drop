@@ -2,13 +2,18 @@ import React from "react";
 
 const Scroll = (props) =>{
 	return(
-		<div style={{
-			overflowY:"scroll",
-			height:500+"px",
-			marginTop: 20 + "px"
+		<div className="scrollContainer" style={{
+
 		}}>
-		{props.children}
+			<div className="scroll">
+				{props.children}
+			</div>
+
 		</div>
 	)
 }
 export default Scroll;
+
+// overflowY:"scroll",
+// height:400+"px",
+// marginTop: 35 + "px"
