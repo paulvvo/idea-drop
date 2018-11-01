@@ -14,9 +14,7 @@ class App extends Component {
 		super();
 		this.state ={
 			searchInputText:"",
-			route:"lgin",
-
-
+			route:"",
 
 		}
 	}
@@ -29,26 +27,21 @@ class App extends Component {
 				{
 					this.state.route === "login"
 					?<Login/>
-					:<Register/>
-
-
+					:this.state.route === "register"
+					?<Register/>
+					:<div>
+						<Scroll>
+							<IdeaPreviewBoxContainer onImagePreviewBoxClick={this.onImagePreviewBoxClick}/>
+						</Scroll>
+					</div>
 				}
-
-				<NavBar
-				onLoginButtonClick={this.onLoginButtonClick}
-				onRegiButtonClick={this.onRegiButtonClick}/>
-
-
+				<NavBar onNavButtonClick={this.onNavButtonClick}/>
 			</div>
     );
   }
-	onLoginButtonClick = (route) =>{
-		console.log(route);
-		this.setState({route})
-	}
-	onRegiButtonClick = (route) =>{
-		console.log(route);
-		this.setState({route})
+	onNavButtonClick = (route) =>{
+		// console.log(route);
+		this.setState({route});
 	}
 	onImagePreviewBoxClick = () =>{
 		console.log("clicked");
@@ -56,8 +49,5 @@ class App extends Component {
 
 }
 
-// <Scroll>
-// 	<IdeaPreviewBoxContainer onImagePreviewBoxClick={this.onImagePreviewBoxClick}/>
-// </Scroll>
 
 export default App;
