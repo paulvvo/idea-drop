@@ -7,6 +7,8 @@ import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 import NavBar from "../Components/NavBar/NavBar";
 import Scroll from "../Components/Scroll/Scroll";
+import IdeaForm from "../Components/IdeaForm/IdeaForm";
+import HomeLogo from "../Components/HomeLogo/HomeLogo";
 import IdeaPreviewBoxContainer from "../Components/IdeaPreviewBoxContainer/IdeaPreviewBoxContainer";
 
 class App extends Component {
@@ -23,7 +25,7 @@ class App extends Component {
 	}
   render() {
     return (
-    	<div>
+				<div>
 				{
 					this.state.route === "login"
 					?<Login/>
@@ -35,16 +37,25 @@ class App extends Component {
 						</Scroll>
 					</div>
 				}
-				<NavBar onNavButtonClick={this.onNavButtonClick}/>
+				<NavBar
+				route={this.state.route}
+				onSearchInputChange={this.onSearchInputChange}
+				onNavButtonClick={this.onNavButtonClick}/>
+
+
+				<HomeLogo/>
+				<IdeaForm/>
 			</div>
     );
   }
 	onNavButtonClick = (route) =>{
-		// console.log(route);
 		this.setState({route});
 	}
 	onImagePreviewBoxClick = () =>{
 		console.log("clicked");
+	}
+	onSearchInputChange =(event) =>{
+		this.setState({searchInputText:event.target.value});
 	}
 
 }
