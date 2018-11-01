@@ -3,7 +3,7 @@ import React,{Component} from "react";
 class Register extends Component{
 	render(){
 		return(
-			<div>
+			<div className="registerComponent">
 			<main className="pa4 black-80">
 				<form className="measure center">
 					<fieldset  className="ba b--transparent ph0 mh0">

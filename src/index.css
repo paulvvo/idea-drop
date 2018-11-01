@@ -53,6 +53,29 @@ code {
 	color:rgb(0, 9, 25);
 	background-color:white;
 }
+.loginComponent{
+	background-color:rgba(255,255,255,0.5);
+	width:40%;
+	min-width:18em;
+	position:absolute;
+	top:50%;
+		left:50%;
+	transform:translate(-50%,-50%);
+
+
+
+}
+.registerComponent{
+	background-color:rgba(255,255,255,0.5);
+	width:40%;
+	min-width:18em;
+	position:absolute;
+	top:50%;
+		left:50%;
+	transform:translate(-50%,-50%);
+
+
+}
 .scrollContainer{
 	height: 100vh;
 }
@@ -70,10 +93,21 @@ code {
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:center;
+
 }
 
 .IdeaPreviewImage{
 	width: auto;
 	height:10em;
 	margin:1em;
+	border-radius:0.5em;
+	transition-duration: 0.2s;
+	user-select:none;
+
+}
+.IdeaPreviewImage:hover{
+	transform: scale(1.2);
+	transition-duration: 0.2s;
+	cursor: pointer;
+
 }

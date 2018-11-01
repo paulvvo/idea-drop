@@ -8,6 +8,7 @@ class IdeaPreviewBox extends Component{
 				className="IdeaPreviewImage"
 				src= {this.props.url}
 				alt="games"
+				draggable="false"
 				onClick={this.props.onImagePreviewBoxClick}/>
 			</div>
 		)
