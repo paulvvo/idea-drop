@@ -40,7 +40,7 @@ code {
 }
 .navbar {
 	background-color:rgba(0, 9, 25, 0.8);
-	padding:1.5em;
+	padding:1em;
 	text-align:right;
 	position:fixed;
 	width:100%;
@@ -49,18 +49,21 @@ code {
 }
 .navbar input{
 	width: 20em;
+	height:1.4em;
 	border-radius: 0.5em;
 	outline-width:0;
-	padding:0.3em;
-	margin:0.5em;
+	padding:0.7em;
+	margin:0 0.5em;
 }
 .navbar a{
 	color:white;
-	margin:0.5em;
+	display:inline-block;
+	height:2.3em;
+	margin:0 0.5em;
 	text-decoration:none;
-	border: 0.05em solid white;
+	/* border: 0.05em solid white; */
 	border-radius:0.2em;
-	padding:0.5em;
+	 padding:0.5em;
 }
 .navbar a:hover{
 	color:rgb(0, 9, 25);
@@ -81,7 +84,7 @@ code {
 	min-width:18em;
 	position:absolute;
 	top:50%;
-		left:50%;
+	left:50%;
 	transform:translate(-50%,-50%);
 
 
