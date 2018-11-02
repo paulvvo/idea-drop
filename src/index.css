@@ -98,10 +98,16 @@ code {
 	border: 0.1em solid white;
 	height:70%;
 	position:absolute;
-	top:40%;
+	top:50%;
 	transform:translateY(-50%);
 }
 
+.ideaform{
+	overflow:auto;
+	height:100vh;
+	width:30em;
+	background-color:rgba(255,255,255,0.5);
+}
 .IdeaContainer{
 	display:flex;
 	flex-direction:row;
@@ -109,7 +115,6 @@ code {
 	justify-content:center;
 	user-select:none;
 }
-
 .IdeaPreviewImage{
 	width: auto;
 	height:10em;

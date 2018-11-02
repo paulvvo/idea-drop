@@ -6,7 +6,7 @@ class NavBar extends Component{
 	render(){
 		const {onNavButtonClick, onSearchInputChange, route} = this.props;
 
-		if(route === "login" || route ==="register"){
+		if(route === "login" || route ==="register" || route==="form"){
 			return(
 				<div className="navbar">
 					<a href="#0" onClick={()=>onNavButtonClick("login")} draggable="false">Login</a>

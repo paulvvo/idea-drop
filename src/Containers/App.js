@@ -16,7 +16,7 @@ class App extends Component {
 		super();
 		this.state ={
 			searchInputText:"",
-			route:"",
+			route:"form",
 			currentUser:{},
 
 		}
@@ -32,6 +32,8 @@ class App extends Component {
 					?<Login/>
 					:this.state.route === "register"
 					?<Register/>
+					:this.state.route === "form"
+					?<IdeaForm/>
 					:<div>
 						<Scroll>
 							<IdeaPreviewBoxContainer onImagePreviewBoxClick={this.onImagePreviewBoxClick}/>
@@ -45,7 +47,6 @@ class App extends Component {
 
 
 				<HomeLogo onHomeLogoClick={this.onHomeLogoClick}/>
-				<IdeaForm/>
 			</div>
     );
   }
