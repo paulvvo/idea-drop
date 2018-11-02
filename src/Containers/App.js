@@ -28,7 +28,7 @@ class App extends Component {
     return (
 
 				<div>
-				<i className="fas fa-plus-circle plusIcon" onClick={()=>this.onHomeLogoClick("form")}></i>
+				<i className="fas fa-plus-circle plusIcon" onClick={()=>this.onRouteChange("form")}></i>
 				{
 					this.state.route === "login"
 					?<Login/>
@@ -47,16 +47,13 @@ class App extends Component {
 				<NavBar
 				route={this.state.route}
 				onSearchInputChange={this.onSearchInputChange}
-				onNavButtonClick={this.onNavButtonClick}/>
+				onRouteChange={this.onRouteChange}/>
 
-				<HomeLogo onHomeLogoClick={this.onHomeLogoClick}/>
+				<HomeLogo onRouteChange={this.onRouteChange}/>
 			</div>
     );
   }
-	onHomeLogoClick = (route) =>{
-		this.setState({route});
-	}
-	onNavButtonClick = (route) =>{
+	onRouteChange = (route) =>{
 		this.setState({route});
 	}
 	onImagePreviewBoxClick = () =>{
