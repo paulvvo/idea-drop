@@ -17,6 +17,7 @@ class App extends Component {
 		this.state ={
 			searchInputText:"",
 			route:"",
+			currentUser:{},
 
 		}
 	}
@@ -43,11 +44,14 @@ class App extends Component {
 				onNavButtonClick={this.onNavButtonClick}/>
 
 
-				<HomeLogo/>
+				<HomeLogo onHomeLogoClick={this.onHomeLogoClick}/>
 				<IdeaForm/>
 			</div>
     );
   }
+	onHomeLogoClick = (route) =>{
+		this.setState({route});
+	}
 	onNavButtonClick = (route) =>{
 		this.setState({route});
 	}

@@ -37,6 +37,8 @@ code {
 .logo img:hover{
 	transition-duration:0.5s;
 	transform:scale(1.2);
+	cursor:pointer;
+
 }
 .navbar {
 	background-color:rgba(0, 9, 25, 0.8);
@@ -46,6 +48,7 @@ code {
 	width:100%;
 	bottom:0;
 	left:0;
+	user-select:none;
 }
 .navbar input{
 	width: 20em;
@@ -86,8 +89,6 @@ code {
 	top:50%;
 	left:50%;
 	transform:translate(-50%,-50%);
-
-
 }
 .scrollContainer{
 	height: 100vh;
@@ -106,7 +107,7 @@ code {
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:center;
-
+	user-select:none;
 }
 
 .IdeaPreviewImage{

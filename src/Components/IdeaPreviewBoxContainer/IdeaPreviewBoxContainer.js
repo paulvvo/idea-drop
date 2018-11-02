@@ -9,7 +9,7 @@ class IdeaPreviewBoxContainer extends Component{
 		const {onImagePreviewBoxClick} = this.props;
 		return(
 
-			<div className="IdeaContainer">
+			<div className="IdeaContainer" draggable="false">
 					<IdeaPreviewBox
 						onImagePreviewBoxClick={onImagePreviewBoxClick}
 						url={"https://images.unsplash.com/photo-1530061738406-233b0e977ea7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b652fbe3813716c0f321ddd75fa85a6&auto=format&fit=crop&w=400&q=60"}/>

@@ -9,18 +9,18 @@ class NavBar extends Component{
 		if(route === "login" || route ==="register"){
 			return(
 				<div className="navbar">
-					<a href="#0" onClick={()=>onNavButtonClick("login")}>Login</a>
-					<a href="#0" onClick={()=>onNavButtonClick("register")}>Sign Up</a>
-					<a href="#0" onClick={()=>onNavButtonClick("home")}>Logout</a>
+					<a href="#0" onClick={()=>onNavButtonClick("login")} draggable="false">Login</a>
+					<a href="#0" onClick={()=>onNavButtonClick("register")} draggable="false">Sign Up</a>
+					<a href="#0" onClick={()=>onNavButtonClick("home")} draggable="false">Logout</a>
 				</div>
 			)
 		}else{
 			return(
 				<div className="navbar">
-					<input type="text" onChange={onSearchInputChange} placeholder="Looking for something '-' ?"/>
-					<a href="#0" onClick={()=>onNavButtonClick("login")}>Login</a>
-					<a href="#0" onClick={()=>onNavButtonClick("register")}>Sign Up</a>
-					<a href="#0" onClick={()=>onNavButtonClick("home")}>Logout</a>
+					<input type="text" onChange={onSearchInputChange} placeholder="Looking for something '-' ?" draggable="false"/>
+					<a href="#0" onClick={()=>onNavButtonClick("login")} draggable="false">Login</a>
+					<a href="#0" onClick={()=>onNavButtonClick("register")} draggable="false">Sign Up</a>
+					<a href="#0" onClick={()=>onNavButtonClick("home")} draggable="false">Logout</a>
 				</div>
 			)
 		}
