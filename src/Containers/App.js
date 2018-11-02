@@ -26,7 +26,9 @@ class App extends Component {
 	}
   render() {
     return (
+
 				<div>
+				<i className="fas fa-plus-circle plusIcon" onClick={()=>this.onHomeLogoClick("form")}></i>
 				{
 					this.state.route === "login"
 					?<Login/>
@@ -40,11 +42,12 @@ class App extends Component {
 						</Scroll>
 					</div>
 				}
+
+
 				<NavBar
 				route={this.state.route}
 				onSearchInputChange={this.onSearchInputChange}
 				onNavButtonClick={this.onNavButtonClick}/>
-
 
 				<HomeLogo onHomeLogoClick={this.onHomeLogoClick}/>
 			</div>

@@ -32,13 +32,25 @@ code {
 	bottom:0;
 	left:0;
 	z-index:2;
-	transition-duration:0.5s;
+	transition-duration:0.2s;
 }
 .logo img:hover{
-	transition-duration:0.5s;
-	transform:scale(1.2);
+	transition-duration:0.2s;
+	transform:scale(1.1);
 	cursor:pointer;
 
+}
+.plusIcon{
+	float:right;
+	color:white;
+	font-size:2em;
+	margin:0.5em;
+	transition-duration:0.2s;
+}
+.plusIcon:hover{
+	color:rgba(255,255,255,0.9);
+	transform:scale(1.2);
+	transition-duration:0.2s;
 }
 .navbar {
 	background-color:rgba(0, 9, 25, 0.8);
