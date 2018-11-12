@@ -16,6 +16,14 @@ const IdeaForm = () =>{
 
 					</fieldset>
 
+					<select id='dropdown' className="ba b--black-20 pa1 mb2 db w-50">
+					  <option value="Technology">Technology</option>
+					  <option value="Games">Games</option>
+					  <option value="Food">Food</option>
+					  <option value="Arts and Crafts">Arts and Crafts</option>
+					  <option value="Clothing">Clothing</option>
+					</select>
+
 					  <div>
 					    <label htmlFor="category" className="f6 b db mb2">Category</label>
 					    <input
