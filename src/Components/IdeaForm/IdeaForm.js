@@ -30,9 +30,9 @@ const IdeaForm = () =>{
 					    <small id="pictureurl" className="f6 black-60 db mb2">Enter in the URL for the image</small>
 					  </div>
 					  <div>
-					    <label htmlFor="comment" className="f6 b db mb2">Comments <span className="normal black-60">(optional)</span></label>
-					    <textarea id="comment" name="comment" className="db border-box hover-black w-100 measure ba b--black-20 pa1 br2 mb2" aria-describedby="comment-desc"></textarea>
-					    <small id="comment-desc" className="f6 black-60">Helper text for a form control. Can use this text to <a href="#0" className="link underline black-80 hover-blue">link to more info.</a></small>
+					    <label htmlFor="description" className="f6 b db mb2">Description</label>
+					    <textarea id="description" name="Description" className="db border-box hover-black w-100 measure ba b--black-20 pa1 br2 mb2" aria-describedby="comment-desc"></textarea>
+					    <small id="description-desc" className="f6 black-60">Enter in all information on your idea. The more details you include the better.</small>
 					  </div>
 						<div className="">
 							<input className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Drop!"/>
