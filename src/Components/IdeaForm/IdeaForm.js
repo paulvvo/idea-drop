@@ -35,7 +35,7 @@ const IdeaForm = () =>{
 					  </div>
 					  <div>
 					    <label htmlFor="description" className="f6 b db mb2">Description</label>
-					    <textarea id="description" name="Description" className="db border-box hover-black w-100 measure ba b--black-20 pa1 br2 mb2" aria-describedby="comment-desc"></textarea>
+					    <textarea id="description" name="Description" className="db border-box hover-black w-100 measure ba b--black-20 pa1 br2 mb2"></textarea>
 					    <small id="description-desc" className="f6 black-60">Enter in all information on your idea. The more details you include the better.</small>
 					  </div>
 						<div className="">

@@ -43,7 +43,6 @@ class App extends Component {
 					:<div>
 						<AddButton onRouteChange={this.onRouteChange}/>
 						<Scroll>
-
 							<IdeaPreviewBoxContainer onImagePreviewBoxClick={this.onImagePreviewBoxClick}/>
 						</Scroll>
 					</div>

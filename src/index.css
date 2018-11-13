@@ -111,7 +111,7 @@ code {
 	height:70%;
 	width:88%;
 	position:absolute;
-	top:50%;
+	top:45%;
 	left:50%;
 	/* transform:translateY(-50%); */
 	transform:translate(-50%, -50%);
@@ -124,8 +124,13 @@ code {
 	margin:0 auto;
 	text-align:center;
 }
-.ideaform .categorySelection select, .ideaform .priceInput input{
+.ideaform .categorySelection select,
+.ideaform .priceInput input{
 	margin:0.5em auto;
+}
+.ideaform textarea{
+	height:20em;
+
 }
 
 .IdeaContainer{
