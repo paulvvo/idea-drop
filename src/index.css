@@ -119,7 +119,12 @@ code {
 	width:30em;
 	background-color:rgba(255,255,255,0.5);
 	margin:0 auto;
+	text-align:center;
 }
+.ideaform .categorySelection select, .ideaform .priceInput input{
+	margin:0.5em auto;
+}
+
 .IdeaContainer{
 	display:flex;
 	flex-direction:row;

@@ -14,7 +14,7 @@ const IdeaForm = () =>{
 							<input className="pa1 input-reset ba bg-transparent hover-bg-black hover-white w-100" name="name" />
 						</div>
 					</fieldset>
-						<div>
+						<div className="categorySelection">
 							<label htmlFor="category" className="f6 b db mb2">Category</label>
 							<select id='category' className="ba b--black-20 pa1	mb2 db w-50">
 							  <option value="Technology">Technology</option>
@@ -24,9 +24,13 @@ const IdeaForm = () =>{
 							  <option value="Clothing">Clothing</option>
 							</select>
 						</div>
+						<div className="priceInput">
+							<label htmlFor="price" className="f6 b db mb2">Price <span className="normal black-60">($CAD)</span></label>
+							<input id="price" className="input-reset ba b--black-2	0 pa1 mb2 db w-50" type="number" step="0.01"/>
+						</div>
 					  <div>
 					    <label htmlFor="pictureurl" className="f6 b db mb2">Picture URL</label>
-					    <input id="pictureurl" className="input-reset ba b--black-20 pa1 mb2 db w-100" type="text" aria-describedby="name-desc" autocomplete="off"/>
+					    <input id="pictureurl" className="input-reset ba b--black-2	0 pa1 mb2 db w-100" type="text" aria-describedby="name-desc" autocomplete="off"/>
 					    <small id="pictureurl" className="f6 black-60 db mb2">Enter in the URL for the image</small>
 					  </div>
 					  <div>
