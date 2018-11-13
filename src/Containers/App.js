@@ -9,6 +9,7 @@ import NavBar from "../Components/NavBar/NavBar";
 import Scroll from "../Components/Scroll/Scroll";
 import IdeaForm from "../Components/IdeaForm/IdeaForm";
 import HomeLogo from "../Components/HomeLogo/HomeLogo";
+import AddButton from "../Components/AddButton/AddButton";
 import IdeaPreviewBoxContainer from "../Components/IdeaPreviewBoxContainer/IdeaPreviewBoxContainer";
 
 class App extends Component {
@@ -31,7 +32,7 @@ class App extends Component {
     return (
 
 				<div>
-				<i className="fas fa-plus-circle plusIcon" onClick={()=>this.onRouteChange("form")}></i>
+
 				{
 					this.state.route === "login"
 					?<Login/>
@@ -40,7 +41,9 @@ class App extends Component {
 					:this.state.route === "form"
 					?<Scroll><IdeaForm/></Scroll>
 					:<div>
+						<AddButton onRouteChange={this.onRouteChange}/>
 						<Scroll>
+
 							<IdeaPreviewBoxContainer onImagePreviewBoxClick={this.onImagePreviewBoxClick}/>
 						</Scroll>
 					</div>
@@ -68,5 +71,7 @@ class App extends Component {
 
 }
 
+
+				// <i className="fas fa-plus-circle plusIcon" onClick={()=>this.onRouteChange("form")}></i>
 
 export default App;
