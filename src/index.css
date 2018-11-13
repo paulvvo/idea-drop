@@ -103,19 +103,22 @@ code {
 	transform:translate(-50%,-50%);
 }
 .scrollContainer{
-	height: 100vh;
+	/* height: 100vh; */
 }
 .scroll{
 	overflow-y:scroll;
 	border: 0.1em solid white;
 	height:70%;
+	width:88%;
 	position:absolute;
 	top:50%;
-	transform:translateY(-50%);
+	left:50%;
+	/* transform:translateY(-50%); */
+	transform:translate(-50%, -50%);
 }
 
 .ideaform{
-	height:100vh;
+	height:auto;
 	width:30em;
 	background-color:rgba(255,255,255,0.5);
 	margin:0 auto;

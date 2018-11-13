@@ -38,7 +38,7 @@ class App extends Component {
 					:this.state.route === "register"
 					?<Register/>
 					:this.state.route === "form"
-					?<IdeaForm/>
+					?<Scroll><IdeaForm/></Scroll>
 					:<div>
 						<Scroll>
 							<IdeaPreviewBoxContainer onImagePreviewBoxClick={this.onImagePreviewBoxClick}/>
