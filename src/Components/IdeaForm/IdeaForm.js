@@ -11,7 +11,7 @@ const IdeaForm = () =>{
 						<legend className="f4 fw6 ph0 mh0">New Idea Drop</legend>
 						<div className="mt3">
 							<label className="db fw6 lh-copy f6" htmlFor="name">Droplet Name</label>
-							<input className="pa1 input-reset ba bg-transparent hover-bg-black hover-white w-100" name="name" />
+							<input className="pa1 input-reset ba bg-transparent hover-bg-black hover-white w-100" name="name"  required/>
 						</div>
 					</fieldset>
 						<div className="categorySelection">
@@ -26,16 +26,16 @@ const IdeaForm = () =>{
 						</div>
 						<div className="priceInput">
 							<label htmlFor="price" className="f6 b db mb2">Price <span className="normal black-60">($CAD)</span></label>
-							<input id="price" className="input-reset ba b--black-2	0 pa1 mb2 db w-50" type="number" step="0.01"/>
+							<input id="price" className="input-reset ba b--black-2	0 pa1 mb2 db w-50" type="number" step="0.01" required/>
 						</div>
 					  <div>
 					    <label htmlFor="pictureurl" className="f6 b db mb2">Picture URL</label>
-					    <input id="pictureurl" className="input-reset ba b--black-2	0 pa1 mb2 db w-100" type="text" aria-describedby="name-desc" autocomplete="off"/>
+					    <input id="pictureurl" className="input-reset ba b--black-2	0 pa1 mb2 db w-100" type="text" aria-describedby="name-desc" autoComplete="off" required/>
 					    <small id="pictureurl" className="f6 black-60 db mb2">Enter in the URL for the image</small>
 					  </div>
 					  <div>
 					    <label htmlFor="description" className="f6 b db mb2">Description</label>
-					    <textarea id="description" name="Description" className="db border-box hover-black w-100 measure ba b--black-20 pa1 br2 mb2"></textarea>
+					    <textarea id="description" name="Description" className="db border-box hover-black w-100 measure ba b--black-20 pa1 br2 mb2" required></textarea>
 					    <small id="description-desc" className="f6 black-60">Enter in all information on your idea. The more details you include the better.</small>
 					  </div>
 						<div className="">

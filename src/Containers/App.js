@@ -70,7 +70,4 @@ class App extends Component {
 
 }
 
-
-				// <i className="fas fa-plus-circle plusIcon" onClick={()=>this.onRouteChange("form")}></i>
-
 export default App;
