@@ -42,7 +42,9 @@ class App extends Component {
 					?<Scroll><IdeaForm/></Scroll>
 					:<div>
 						<AddButton onRouteChange={this.onRouteChange}/>
-						<Scroll>
+						<Scroll style={{
+							backgroundColor:"blue"
+						}}>
 							<IdeaPreviewBoxContainer onImagePreviewBoxClick={this.onImagePreviewBoxClick}/>
 						</Scroll>
 					</div>

@@ -106,9 +106,6 @@ code {
 	padding-top:2.6em;
 
 }
-.scrollContainer{
-	/* height: 100vh; */
-}
 .scroll{
 	overflow-y:scroll;
 	border: 0.1em solid white;
@@ -119,7 +116,6 @@ code {
 	left:50%;
 	transform:translate(-50%, -50%);
 }
-
 .ideaform{
 	height:auto;
 	width:30em;
@@ -141,6 +137,7 @@ code {
 	flex-wrap:wrap;
 	justify-content:center;
 	user-select:none;
+	width:75em;
 }
 .IdeaPreviewImage{
 	width: auto;
